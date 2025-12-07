@@ -14,6 +14,133 @@
     <div class="reveal">
         <div class="slides">
             <!-- Your slides will go here -->
+             <section>
+					<h1>Q4 2024 Earnings Report</h1>
+					<h3>Financial Performance Overview</h3>
+					<p>
+						<small>Prepared by: <a href="mailto:22f3002716@ds.study.iitm.ac.in">22f3002716@ds.study.iitm.ac.in</a></small>
+					</p>
+					<p><small>December 2024</small></p>
+					<aside class="notes">
+						Welcome everyone to our Q4 earnings presentation. 
+						Today we'll review our financial performance, key metrics, and strategic outlook.
+					</aside>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						## Executive Summary
+						
+						**Key Highlights:**
+						
+						- Revenue increased by 15.3% YoY
+						- Net profit margin improved to 22.5%
+						- Customer base grew by 1.2M users
+						- Successfully launched 3 new products
+							
+						---
+							
+						*"Our strongest quarter in company history"*
+							
+						<aside class="notes">
+							This slide provides a high-level overview. Emphasize the revenue growth and customer acquisition.
+						</aside>
+					</textarea>
+				</section>
+				<section>
+					<h2>Key Financial Metrics</h2>
+					<div style="text-align: left; margin-left: 100px;">
+						<p class="fragment fade-in">📊 <strong>Total Revenue:</strong> $450M <span class="fragment highlight-green">(+15.3% YoY)</span></p>
+						<p class="fragment fade-in">💰 <strong>Operating Income:</strong> $112M <span class="fragment highlight-green">(+18.7% YoY)</span></p>
+						<p class="fragment fade-in">📈 <strong>Net Income:</strong> $101.25M <span class="fragment highlight-green">(+22.5% YoY)</span></p>
+						<p class="fragment fade-in">👥 <strong>Active Users:</strong> 8.7M <span class="fragment highlight-blue">(+1.2M this quarter)</span></p>
+					</div>
+					
+					<aside class="notes">
+						Walk through each metric one by one. Pause after each fragment appears to let the numbers sink in.
+						Highlight the consistent growth across all key indicators.
+					</aside>
+				</section>
+				<section>
+					<h2>Revenue Analysis</h2>
+					<p>Automated reporting using Python:</p>
+					<pre><code class="python" data-trim data-line-numbers="1-2|4-8|10-12">
+							import pandas as pd
+							import numpy as np
+
+							# Load quarterly data
+							revenue_data = pd.read_csv('q4_revenue.csv')
+							revenue_growth = revenue_data['revenue'].pct_change() * 100
+
+							print(f"Q4 Revenue: ${revenue_data['revenue'].iloc[-1]:,.0f}")
+							print(f"Growth Rate: {revenue_growth.iloc[-1]:.2f}%")
+
+							# Calculate projections
+							projected_q1 = revenue_data['revenue'].iloc[-1] * 1.12
+							print(f"Q1 2025 Projection: ${projected_q1:,.0f}")
+						</code>
+					</pre>
+					
+					<aside class="notes">
+						This code demonstrates our automated revenue analysis pipeline.
+						Line 1-2: Import necessary libraries
+						Line 4-8: Load and calculate growth rates
+						Line 10-12: Generate forward-looking projections
+					</aside>
+				</section>
+				<section>
+					<h2>Financial Formulas</h2>
+					
+					<h3>Return on Equity (ROE)</h3>
+					<p>$$ROE = \frac{Net\ Income}{Shareholder's\ Equity} \times 100$$</p>
+					<p class="fragment">Our Q4 ROE: <span class="fragment highlight-green"><strong>24.8%</strong></span></p>
+					
+					<hr>
+					
+					<h3>Compound Annual Growth Rate (CAGR)</h3>
+					<p>$$CAGR = \left(\frac{Ending\ Value}{Beginning\ Value}\right)^{\frac{1}{n}} - 1$$</p>
+					<p class="fragment">3-Year Revenue CAGR: <span class="fragment highlight-green"><strong>18.2%</strong></span></p>
+					
+					<aside class="notes">
+						These are the key formulas we use for performance evaluation.
+						ROE of 24.8% exceeds industry average of 15-20%.
+						Our CAGR demonstrates consistent, sustainable growth.
+					</aside>
+				</section>
+				<section>
+					<h2>Strategic Initiatives for 2025</h2>
+					<ol>
+						<li class="fragment fade-right">Expand into 5 new international markets</li>
+						<li class="fragment fade-right">Launch AI-powered advisory platform</li>
+						<li class="fragment fade-right">Implement blockchain settlement system</li>
+						<li class="fragment fade-right">Increase R&D investment by 30%</li>
+					</ol>
+					
+					<p class="fragment fade-up" style="margin-top: 50px; color: #42affa;">
+						<strong>Expected Impact:</strong> 20-25% revenue growth in 2025
+					</p>
+					
+					<aside class="notes">
+						Each initiative builds on our Q4 momentum.
+						AI platform already in beta testing with positive feedback.
+						Blockchain system will reduce settlement times by 60%.
+					</aside>
+				</section>
+				<section>
+					<h2>Thank You</h2>
+					<h3>Questions & Discussion</h3>
+					<br>
+					<p>Contact: <a href="mailto:22f3002716@ds.study.iitm.ac.in">22f3002716@ds.study.iitm.ac.in</a></p>
+					<br>
+					<p><small>Presentation powered by RevealJS</small></p>
+					
+					<aside class="notes">
+						Open the floor for questions. Be prepared to discuss:
+						- Detailed breakdown of revenue sources
+						- Risk factors for 2025 projections
+						- Competitive positioning
+						- Capital allocation strategy
+					</aside>
+				</section>
         </div>
     </div>
 
